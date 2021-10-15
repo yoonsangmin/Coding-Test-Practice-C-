@@ -15,13 +15,28 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="F:\source\repos\C++\Coding Test Practice\CodingTestPractice\CodingTestPractice\LeetCode - ArrayPartition1.cpp">
+    <ClCompile Include="Goorm - Distance of two points.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="F:\source\repos\C++\Coding Test Practice\CodingTestPractice\CodingTestPractice\LeetCode - Best Time to Buy and Sell Stock.cpp">
+    <ClCompile Include="LeetCode - ArrayPartition1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="F:\source\repos\C++\Coding Test Practice\CodingTestPractice\CodingTestPractice\LeetCode - 3Sum.cpp">
+    <ClCompile Include="LeetCode - Best Time to Buy and Sell Stock.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode - 3Sum.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Goorm - Find interest on bank deposits.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Goorm - Print nums.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Goorm - Perfect square.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Goorm - Perfect number.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

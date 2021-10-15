@@ -139,9 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="F:\source\repos\C++\Coding Test Practice\CodingTestPractice\CodingTestPractice\LeetCode - 3Sum.cpp" />
-    <ClCompile Include="F:\source\repos\C++\Coding Test Practice\CodingTestPractice\CodingTestPractice\LeetCode - ArrayPartition1.cpp" />
-    <ClCompile Include="F:\source\repos\C++\Coding Test Practice\CodingTestPractice\CodingTestPractice\LeetCode - Best Time to Buy and Sell Stock.cpp" />
+    <ClCompile Include="Goorm - Distance of two points.cpp" />
+    <ClCompile Include="Goorm - Find interest on bank deposits.cpp" />
+    <ClCompile Include="Goorm - Perfect number.cpp" />
+    <ClCompile Include="Goorm - Perfect square.cpp" />
+    <ClCompile Include="Goorm - Print nums.cpp" />
+    <ClCompile Include="LeetCode - 3Sum.cpp" />
+    <ClCompile Include="LeetCode - ArrayPartition1.cpp" />
+    <ClCompile Include="LeetCode - Best Time to Buy and Sell Stock.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
