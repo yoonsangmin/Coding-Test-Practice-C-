@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Goorm - Distance of two points.cpp">
+    <ClCompile Include="Goorm L2 - Distance of two points.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="LeetCode - ArrayPartition1.cpp">
@@ -27,16 +27,25 @@
     <ClCompile Include="LeetCode - 3Sum.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Goorm - Find interest on bank deposits.cpp">
+    <ClCompile Include="Goorm L2 - Find interest on bank deposits.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Goorm - Print nums.cpp">
+    <ClCompile Include="Goorm L2 - Print nums.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Goorm - Perfect square.cpp">
+    <ClCompile Include="Goorm L2 - Perfect square.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Goorm - Perfect number.cpp">
+    <ClCompile Include="Goorm L2 - Perfect number.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Goorm L2 - 3D Array.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Goorm L2 - Shortest Distance.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Goorm L2 - Pizza Coupon.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

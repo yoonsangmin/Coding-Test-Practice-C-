@@ -139,11 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Goorm - Distance of two points.cpp" />
-    <ClCompile Include="Goorm - Find interest on bank deposits.cpp" />
-    <ClCompile Include="Goorm - Perfect number.cpp" />
-    <ClCompile Include="Goorm - Perfect square.cpp" />
-    <ClCompile Include="Goorm - Print nums.cpp" />
+    <ClCompile Include="Goorm L2 - Distance of two points.cpp" />
+    <ClCompile Include="Goorm L2 - Find interest on bank deposits.cpp" />
+    <ClCompile Include="Goorm L2 - Perfect number.cpp" />
+    <ClCompile Include="Goorm L2 - Perfect square.cpp" />
+    <ClCompile Include="Goorm L2 - Pizza Coupon.cpp" />
+    <ClCompile Include="Goorm L2 - Print nums.cpp" />
+    <ClCompile Include="Goorm L2 - 3D Array.cpp" />
+    <ClCompile Include="Goorm L2 - Shortest Distance.cpp" />
     <ClCompile Include="LeetCode - 3Sum.cpp" />
     <ClCompile Include="LeetCode - ArrayPartition1.cpp" />
     <ClCompile Include="LeetCode - Best Time to Buy and Sell Stock.cpp" />
