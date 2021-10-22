@@ -63,5 +63,11 @@
     <ClCompile Include="Goorm L2 - Sum of factors.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="LeetCode - Palindrome Linked List.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="LeetCode - Merge Two Sorted Lists.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

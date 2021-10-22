@@ -155,6 +155,8 @@
     <ClCompile Include="LeetCode - 3Sum.cpp" />
     <ClCompile Include="LeetCode - ArrayPartition1.cpp" />
     <ClCompile Include="LeetCode - Best Time to Buy and Sell Stock.cpp" />
+    <ClCompile Include="LeetCode - Merge Two Sorted Lists.cpp" />
+    <ClCompile Include="LeetCode - Palindrome Linked List.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
