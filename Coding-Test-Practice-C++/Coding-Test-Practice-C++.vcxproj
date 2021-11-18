@@ -142,6 +142,7 @@
     <ClCompile Include="Goorm L2 - Absolute Value.cpp" />
     <ClCompile Include="Goorm L2 - Area of triangle 2.cpp" />
     <ClCompile Include="Goorm L2 - Calculator.cpp" />
+    <ClCompile Include="Goorm L2 - change the upper case and lower case and print.cpp" />
     <ClCompile Include="Goorm L2 - Dice Game.cpp" />
     <ClCompile Include="Goorm L2 - Distance of two points.cpp" />
     <ClCompile Include="Goorm L2 - Factorial.cpp" />
@@ -150,6 +151,7 @@
     <ClCompile Include="Goorm L2 - Get The Number Of Prime Number.cpp" />
     <ClCompile Include="Goorm L2 - Max Value.cpp" />
     <ClCompile Include="Goorm L2 - Minesweeper.cpp" />
+    <ClCompile Include="Goorm L2 - Multi Tap.cpp" />
     <ClCompile Include="Goorm L2 - Multiplication table plus.cpp" />
     <ClCompile Include="Goorm L2 - Narcissistic Number.cpp" />
     <ClCompile Include="Goorm L2 - Odd Number Game.cpp" />
@@ -158,16 +160,22 @@
     <ClCompile Include="Goorm L2 - Pizza Coupon.cpp" />
     <ClCompile Include="Goorm L2 - Print nums.cpp" />
     <ClCompile Include="Goorm L2 - 3D Array.cpp" />
+    <ClCompile Include="Goorm L2 - product distribution.cpp" />
     <ClCompile Include="Goorm L2 - Selection Sort.cpp" />
     <ClCompile Include="Goorm L2 - Separation numbers in a range, multiply, and sum.cpp" />
     <ClCompile Include="Goorm L2 - Shortest Distance.cpp" />
     <ClCompile Include="Goorm L2 - Sum of factors.cpp" />
+    <ClCompile Include="Goorm L2 - Sum of odd numbers.cpp" />
+    <ClCompile Include="Goorm L2 - The Average and the bigger number than the average.cpp" />
     <ClCompile Include="LeetCode - 3Sum.cpp" />
     <ClCompile Include="LeetCode - Add Two Numbers.cpp" />
     <ClCompile Include="LeetCode - ArrayPartition1.cpp" />
     <ClCompile Include="LeetCode - Best Time to Buy and Sell Stock.cpp" />
+    <ClCompile Include="LeetCode - Daily Temperatures.cpp" />
     <ClCompile Include="LeetCode - Merge Two Sorted Lists.cpp" />
     <ClCompile Include="LeetCode - Palindrome Linked List.cpp" />
+    <ClCompile Include="LeetCode - Remove Duplicate Letters.cpp" />
+    <ClCompile Include="LeetCode - Valid Parentheses.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
