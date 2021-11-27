@@ -172,9 +172,13 @@
     <ClCompile Include="LeetCode - ArrayPartition1.cpp" />
     <ClCompile Include="LeetCode - Best Time to Buy and Sell Stock.cpp" />
     <ClCompile Include="LeetCode - Daily Temperatures.cpp" />
+    <ClCompile Include="LeetCode - Design HashMap.cpp" />
+    <ClCompile Include="LeetCode - Jewels and Stones.cpp" />
+    <ClCompile Include="LeetCode - Longest Substring Without Repeating Characters.cpp" />
     <ClCompile Include="LeetCode - Merge Two Sorted Lists.cpp" />
     <ClCompile Include="LeetCode - Palindrome Linked List.cpp" />
     <ClCompile Include="LeetCode - Remove Duplicate Letters.cpp" />
+    <ClCompile Include="LeetCode - Top K Frequent Elements.cpp" />
     <ClCompile Include="LeetCode - Valid Parentheses.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
