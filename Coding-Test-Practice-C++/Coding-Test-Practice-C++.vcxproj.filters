@@ -138,5 +138,11 @@
     <ClCompile Include="LeetCode - Top K Frequent Elements.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers L1 - uncompleted participant.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="programmers L2 - phone number list.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
