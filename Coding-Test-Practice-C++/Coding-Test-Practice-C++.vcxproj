@@ -182,7 +182,9 @@
     <ClCompile Include="LeetCode - Valid Parentheses.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
     <ClCompile Include="Programmers L2 - camouflage.cpp" />
+    <ClCompile Include="Programmers L2 - Function Development.cpp" />
     <ClCompile Include="programmers L2 - phone number list.cpp" />
+    <ClCompile Include="Programmers L2 - Printer.cpp" />
     <ClCompile Include="Programmers L3 - best album.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
