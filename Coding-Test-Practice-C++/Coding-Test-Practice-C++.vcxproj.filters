@@ -156,5 +156,8 @@
     <ClCompile Include="Programmers L2 - Printer.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers L2 - truck crossing the bridge.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
