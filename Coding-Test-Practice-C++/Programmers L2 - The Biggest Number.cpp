@@ -37,6 +37,8 @@
 //}
 
 // 다른 사람 풀이
+// stringstream으로 문자열을 쪼개는 거 뿐 아니라 합치는 것도 할 수 있음
+// 실제로 곱해서 더해보고 값을 비교해보기
 
 //#include <string>
 //#include <vector>
