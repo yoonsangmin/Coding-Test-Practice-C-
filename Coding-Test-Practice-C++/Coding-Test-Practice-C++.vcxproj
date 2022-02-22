@@ -183,6 +183,7 @@
     <ClCompile Include="Programmers L1 - Mock Exam.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
     <ClCompile Include="Programmers L2 - camouflage.cpp" />
+    <ClCompile Include="Programmers L2 - Carpet.cpp" />
     <ClCompile Include="Programmers L2 - Finding Prime Number.cpp" />
     <ClCompile Include="Programmers L2 - Function Development.cpp" />
     <ClCompile Include="Programmers L1 - Kth Number.cpp" />
