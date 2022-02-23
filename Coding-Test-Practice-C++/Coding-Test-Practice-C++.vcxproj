@@ -180,6 +180,7 @@
     <ClCompile Include="LeetCode - Remove Duplicate Letters.cpp" />
     <ClCompile Include="LeetCode - Top K Frequent Elements.cpp" />
     <ClCompile Include="LeetCode - Valid Parentheses.cpp" />
+    <ClCompile Include="Programmers L1 - Gym Suit.cpp" />
     <ClCompile Include="Programmers L1 - Mock Exam.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
     <ClCompile Include="Programmers L2 - camouflage.cpp" />
@@ -188,6 +189,7 @@
     <ClCompile Include="Programmers L2 - Function Development.cpp" />
     <ClCompile Include="Programmers L1 - Kth Number.cpp" />
     <ClCompile Include="Programmers L2 - H-Index.cpp" />
+    <ClCompile Include="Programmers L2 - Joystick.cpp" />
     <ClCompile Include="programmers L2 - phone number list.cpp" />
     <ClCompile Include="Programmers L2 - Printer.cpp" />
     <ClCompile Include="Programmers L2 - The Biggest Number.cpp" />
