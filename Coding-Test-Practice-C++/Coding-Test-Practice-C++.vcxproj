@@ -197,6 +197,9 @@
     <ClCompile Include="Programmers L2 - truck crossing the bridge.cpp" />
     <ClCompile Include="Programmers L3 - best album.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmers L2 - .Life Boat.cpp" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

@@ -187,4 +187,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Programmers L2 - .Life Boat.cpp">
+      <Filter>소스 파일</Filter>
+    </None>
+  </ItemGroup>
 </Project>
