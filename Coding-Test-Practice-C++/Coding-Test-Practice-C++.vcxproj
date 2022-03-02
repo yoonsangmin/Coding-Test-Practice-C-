@@ -196,6 +196,7 @@
     <ClCompile Include="Programmers L2 - The Biggest Number.cpp" />
     <ClCompile Include="Programmers L2 - truck crossing the bridge.cpp" />
     <ClCompile Include="Programmers L3 - best album.cpp" />
+    <ClCompile Include="Programmers L3 - Connecting islands.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Programmers L2 - .Life Boat.cpp" />
