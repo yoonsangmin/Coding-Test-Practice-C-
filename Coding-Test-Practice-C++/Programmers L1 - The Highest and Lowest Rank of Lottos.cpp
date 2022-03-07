@@ -33,8 +33,10 @@
 //
 //    return answer;
 //}
-//
-////// 조건문 대신 이런식으로 간단하게 맞은 개수에 맞는 순위를 구할 수 있음
-////int rank[7] = { 6, 6, 5, 4, 3, 2, 1 };
-////answer.push_back(rank[max_count]);
-////answer.push_back(rank[min_count]);
+
+
+
+//// 조건문 대신 이런식으로 배열에 미리 선언 후 변환하는 식으로 간단하게 맞은 개수에 맞는 순위를 구할 수 있음
+//int rank[7] = { 6, 6, 5, 4, 3, 2, 1 };
+//answer.push_back(rank[max_count]);
+//answer.push_back(rank[min_count]);

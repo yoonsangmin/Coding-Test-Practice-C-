@@ -198,6 +198,9 @@
     <ClCompile Include="Programmers L1 - The Highest and Lowest Rank of Lottos.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers L1 - Generate a New ID.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Programmers L2 - .Life Boat.cpp">
