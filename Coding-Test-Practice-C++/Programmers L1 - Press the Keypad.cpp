@@ -1,5 +1,3 @@
-//// 내일 다시 풀어보기
-
 //// 내 풀이
 //// 엄청 지저분하고 억지로 푼 느낌이 강함
 //// 예외 처리가 너무 많음
@@ -217,7 +215,7 @@
 //    return answer;
 //}
 
-//// 독특한 풀이 이해해야 함
+//// 독특한 풀이
 //// Coord 에 있는 매개 변수 int coord[] 에 결과값을 저장할 수 있게 만들어 줬음
 //#include <string>
 //#include <vector>
@@ -337,5 +335,91 @@
 //            }
 //        }
 //    }
+//    return answer;
+//}
+
+
+//// 다시 풀어보기
+//// 좌표를 사용해서 다시 풀어봄
+//// 함수를 사용해서 그런가 시간이 오래 걸림
+//// 함수에 매개변수를 레퍼런스로 받으면 좀 완화되는 듯
+//// 그리고 벡터 선언을 반복문 밖으로 한번 빼봄
+//#include <string>
+//#include <vector>
+//
+//using namespace std;
+//
+//void number_to_coor(vector<int>& coor, int& number)
+//{
+//	if (number == 0) number = 11;
+//	
+//	coor = { (number - 1) % 3, (number - 1) / 3 };
+//}
+//
+//int distance(vector<int>& a, vector<int>& b)
+//{
+//	return abs(a[0] - b[0]) + abs(a[1] - b[1]);
+//}
+//
+//string solution(vector<int> numbers, string hand)
+//{
+//    string answer = "";
+//	int cur_left = 10, cur_right = 12;
+//	vector<int> number_coor;
+//	vector<int> left_coor, right_coor;
+//	int left_dist, right_dist;
+//
+//	for (int number : numbers)
+//	{
+//		number_to_coor(number_coor, number);
+//
+//		if (number_coor[0] == 0)
+//		{
+//			cur_left = number;
+//			answer += 'L';
+//			continue;
+//		}
+//		else if (number_coor[0] == 2)
+//		{
+//			cur_right = number;
+//			answer += 'R';
+//			continue;
+//		}
+//		else
+//		{
+//			number_to_coor(left_coor, cur_left);
+//			number_to_coor(right_coor, cur_right);
+//			left_dist = distance(number_coor, left_coor), right_dist = distance(number_coor, right_coor);
+//
+//			if (left_dist < right_dist)
+//			{
+//				cur_left = number;
+//				answer += 'L';
+//				continue;
+//			}
+//			else if (right_dist < left_dist)
+//			{
+//				cur_right = number;
+//				answer += 'R';
+//				continue;
+//			}
+//			else
+//			{
+//				if (hand == "left")
+//				{
+//					cur_left = number;
+//					answer += 'L';
+//					continue;
+//				}
+//				else
+//				{
+//					cur_right = number;
+//					answer += 'R';
+//					continue;
+//				}
+//			}
+//		}
+//	}
+//
 //    return answer;
 //}
