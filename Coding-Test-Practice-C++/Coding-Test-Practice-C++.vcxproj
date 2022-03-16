@@ -182,6 +182,7 @@
     <ClCompile Include="LeetCode - Top K Frequent Elements.cpp" />
     <ClCompile Include="LeetCode - Valid Parentheses.cpp" />
     <ClCompile Include="Programmers L1 - Add Missing Numbers.cpp" />
+    <ClCompile Include="Programmers L1 - Add Yin and Yang.cpp" />
     <ClCompile Include="Programmers L1 - Dot Product.cpp" />
     <ClCompile Include="Programmers L1 - Generate a New ID.cpp" />
     <ClCompile Include="Programmers L1 - Getting Report Results.cpp" />
