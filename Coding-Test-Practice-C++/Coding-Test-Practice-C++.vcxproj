@@ -187,6 +187,7 @@
     <ClCompile Include="Programmers L1 - Generate a New ID.cpp" />
     <ClCompile Include="Programmers L1 - Getting Report Results.cpp" />
     <ClCompile Include="Programmers L1 - Gym Suit.cpp" />
+    <ClCompile Include="Programmers L1 - Minimum Rectangle.cpp" />
     <ClCompile Include="Programmers L1 - Mock Exam.cpp" />
     <ClCompile Include="Programmers L1 - Number String and English Word.cpp" />
     <ClCompile Include="Programmers L1 - Press the Keypad.cpp" />
