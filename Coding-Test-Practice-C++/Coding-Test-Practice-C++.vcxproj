@@ -190,6 +190,7 @@
     <ClCompile Include="Programmers L1 - Minimum Rectangle.cpp" />
     <ClCompile Include="Programmers L1 - Mock Exam.cpp" />
     <ClCompile Include="Programmers L1 - Number String and English Word.cpp" />
+    <ClCompile Include="Programmers L1 - Pick Two Numbers and Sum.cpp" />
     <ClCompile Include="Programmers L1 - Press the Keypad.cpp" />
     <ClCompile Include="Programmers L1 - The Highest and Lowest Rank of Lottos.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
