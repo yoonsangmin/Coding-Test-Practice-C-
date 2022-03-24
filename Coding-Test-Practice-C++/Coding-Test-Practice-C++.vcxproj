@@ -187,6 +187,7 @@
     <ClCompile Include="Programmers L1 - Divisible Array of Numbers.cpp" />
     <ClCompile Include="Programmers L1 - Dot Product.cpp" />
     <ClCompile Include="Programmers L1 - Generate a New ID.cpp" />
+    <ClCompile Include="Programmers L1 - Get Middle Letter.cpp" />
     <ClCompile Include="Programmers L1 - Getting Report Results.cpp" />
     <ClCompile Include="Programmers L1 - Gym Suit.cpp" />
     <ClCompile Include="Programmers L1 - Make a Prime Number.cpp" />
