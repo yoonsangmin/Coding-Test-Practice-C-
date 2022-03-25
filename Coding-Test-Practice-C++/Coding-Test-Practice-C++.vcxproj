@@ -186,6 +186,7 @@
     <ClCompile Include="Programmers L1 - Add Yin and Yang.cpp" />
     <ClCompile Include="Programmers L1 - Divisible Array of Numbers.cpp" />
     <ClCompile Include="Programmers L1 - Dot Product.cpp" />
+    <ClCompile Include="Programmers L1 - Finding Prime Number.cpp" />
     <ClCompile Include="Programmers L1 - Generate a New ID.cpp" />
     <ClCompile Include="Programmers L1 - Get Middle Letter.cpp" />
     <ClCompile Include="Programmers L1 - Getting Report Results.cpp" />
