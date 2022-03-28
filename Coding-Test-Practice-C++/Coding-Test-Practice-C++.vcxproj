@@ -216,6 +216,7 @@
     <ClCompile Include="Programmers L3 - Connecting islands.cpp" />
     <ClCompile Include="Programmers L3 - Speed Trap Camera.cpp" />
     <ClCompile Include="Programmers Skill up Level 2.cpp" />
+    <ClCompile Include="Programmers Skill up Level 3.cpp" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Programmers L2 - .Life Boat.cpp" />
