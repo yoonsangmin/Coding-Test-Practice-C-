@@ -191,6 +191,7 @@
     <ClCompile Include="Programmers L1 - Get Middle Letter.cpp" />
     <ClCompile Include="Programmers L1 - Getting Report Results.cpp" />
     <ClCompile Include="Programmers L1 - Gym Suit.cpp" />
+    <ClCompile Include="Programmers L1 - Harshad Number.cpp" />
     <ClCompile Include="Programmers L1 - Make a Prime Number.cpp" />
     <ClCompile Include="Programmers L1 - Minimum Rectangle.cpp" />
     <ClCompile Include="Programmers L1 - Mock Exam.cpp" />

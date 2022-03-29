@@ -3,38 +3,40 @@
 //// 내 풀이
 //#include <string>
 //#include <vector>
+//#include <algorithm>
+//#include <map>
+//#include <queue>
 //
 //using namespace std;
 //
-//void find_second(vector<vector<int>>& board, int r, int c)
-//{
-//    int selected_num = board[r][c];
-//    int first_r = r, first_c = c;
 //
-//
-//    // erase
-//    board[first_r][first_c] = 0;
-//    board[r][c] = 0;
-//}
-//
-//// 현재 위치에서 가장 가까운 점을 하나 정함
-//int set_first(vector<vector<int>>& board, int r, int c)
-//{
-//
-//    find_second(board, r, c);
-//}
 //
 //int solution(vector<vector<int>> board, int r, int c) {
 //    int answer = 0;
-//    int remain = 0;
+//    vector<int> cards;
+//    map<int, vector<pair<int, int>>> card_pos;
+//    
+//    for (int tr = 0; tr < 4; tr++)
+//        for (int tc = 0; tc < 4; tc++)
+//        {
+//            if (board[tr][tc] == 0)
+//                continue;
 //
-//    for (int x = 0; x < 4; x++)
-//        for (int y = 0; y < 4; y++)
-//            if (board[x][y] != 0) remain++;
-//    remain >>= 1;
+//            if (find(cards.begin(), cards.end(), board[tr][tc]) != cards.end())
+//                cards.push_back(board[tr][tc]);
+//            card_pos[board[tr][tc]].push_back({ tr, tc });
+//        }
 //
-//    for (remain; remain > 0; remain--)
-//        set_first(board, r, c);
+//    sort(cards.begin(), cards.end());
+//
+//    do
+//    {
+//        queue<pair<int, int>> q;
+//
+//        q.push({ cards[0], 0 });
+//
+//
+//    } while (next_permutation(cards.begin(), cards.end()));
 //
 //    return answer;
 //}
