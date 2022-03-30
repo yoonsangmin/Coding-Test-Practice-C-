@@ -1,45 +1,296 @@
 //// 1번 문제
 //// 카카오 카드 문제
 //// 내 풀이
+//// 틀린 후 해설보고 다시 품
 //#include <string>
 //#include <vector>
-//#include <algorithm>
 //#include <map>
 //#include <queue>
+//#include <algorithm>
+//#define INF 10000000
 //
 //using namespace std;
 //
+//int D[4][2] = { {0, -1}, {-1, 0}, {0, 1}, {1, 0} };
 //
+//struct Point
+//{
+//    int r, c, cnt;
+//};
 //
-//int solution(vector<vector<int>> board, int r, int c) {
-//    int answer = 0;
-//    vector<int> cards;
-//    map<int, vector<pair<int, int>>> card_pos;
-//    
-//    for (int tr = 0; tr < 4; tr++)
-//        for (int tc = 0; tc < 4; tc++)
+//int bfs(vector<vector<int>>& board, vector<int> dpt, vector<int> dst)
+//{
+//    int visited[4][4] = { false };
+//
+//    queue<Point> q;
+//    q.push({ dpt[0], dpt[1], 0});
+//
+//    while (!q.empty())
+//    {
+//        Point cur = q.front();
+//        q.pop();
+//
+//        if (cur.r == dst[0] && cur.c == dst[1])
+//            return cur.cnt;
+//
+//        for (int* dir : D)
 //        {
-//            if (board[tr][tc] == 0)
+//            int next_r = cur.r + dir[0], next_c = cur.c + dir[1];
+//
+//            if (next_r < 0 || next_r > 3 || next_c < 0 || next_c > 3)
 //                continue;
 //
-//            if (find(cards.begin(), cards.end(), board[tr][tc]) != cards.end())
-//                cards.push_back(board[tr][tc]);
-//            card_pos[board[tr][tc]].push_back({ tr, tc });
+//            if (!visited[next_r][next_c])
+//            {
+//                visited[next_r][next_c] = true;
+//                q.push({ next_r, next_c, cur.cnt + 1 });
+//            }
+//
+//            for (int i = 0; i < 2; i++)
+//            {
+//                if (board[next_r][next_c] != 0)
+//                    break;
+//
+//                if (next_r + dir[0] < 0 || next_r + dir[0] > 3 || next_c + dir[1] < 0, next_c + dir[1] > 3)
+//                    break;
+//
+//                next_r += dir[0];
+//                next_c += dir[1];
+//            }
+//
+//            if (!visited[next_r][next_c])
+//            {
+//                visited[next_r][next_c] = true;
+//                q.push({ next_r, next_c, cur.cnt + 1 });
+//            }
 //        }
+//    }
 //
-//    sort(cards.begin(), cards.end());
+//    return INF;
+//}
 //
-//    do
+//map<int, vector<vector<int>>> make_card_map(vector<vector<int>>& board)
+//{
+//    map<int, vector<vector<int>>> m;
+//
+//    for (int r = 0; r < 4; r++)
+//        for (int c = 0; c < 4; c++)
+//        {
+//            if (board[r][c] == 0)
+//                continue;
+//
+//            m[board[r][c]].push_back({ r, c, 0 });
+//        }
+//    return m;
+//}
+//
+//int traverse_permutation(vector<vector<int>>& board, vector<int> cur)
+//{
+//    map<int, vector<vector<int>>> cards = make_card_map(board);
+//
+//    if (cards.empty())
+//        return 0;
+//
+//    int ret = INF;
+//
+//    for (auto &[key, value] : cards)
 //    {
-//        queue<pair<int, int>> q;
+//        int card1 = bfs(board, cur, value[0]) + bfs(board, value[0], value[1]) + 2;
+//        int card2 = bfs(board, cur, value[1]) + bfs(board, value[1], value[0]) + 2;
 //
-//        q.push({ cards[0], 0 });
+//        for (int i = 0; i <= 1; i++)
+//            board[value[i][0]][value[i][1]] = 0;
 //
+//        ret = min(ret, card1 + traverse_permutation(board, value[1]));
+//        ret = min(ret, card2 + traverse_permutation(board, value[0]));
 //
-//    } while (next_permutation(cards.begin(), cards.end()));
+//        for (int i = 0; i <= 1; i++)
+//            board[value[i][0]][value[i][1]] = key;
+//    }
+//
+//    return ret;
+//}
+//
+//int solution(vector<vector<int>> board, int r, int c) {
+//    int answer = traverse_permutation(board, { r, c });
 //
 //    return answer;
 //}
+//
+//int main()
+//{
+//    solution({ {1, 0, 0, 3}, {2, 0, 0, 0}, {0, 0, 0, 2}, {3, 0, 1, 0} }, 1, 0);
+//
+//    return 0;
+//}
+
+//// 다른 사람 풀이
+//// next_permutation 잘 씀
+//#include <bits/stdc++.h>
+//using namespace std;
+//using pii = pair<int, int>;
+//#define X first
+//#define Y second
+//
+//int dx[4] = { 1,-1,0,0 };
+//int dy[4] = { 0,0,-1,1 };
+//
+//bool OOB(int x, int y) {
+//    return x < 0 || x > 3 || y < 0 || y > 3;
+//}
+//
+//int dist(vector<vector<int>>& board, pii src, pii dst) {
+//    int d[4][4];
+//    for (int i = 0; i < 4; i++) for (int j = 0; j < 4; j++) d[i][j] = -1;
+//    d[src.X][src.Y] = 0;
+//    queue<pii> q;
+//    q.push(src);
+//    while (!q.empty()) {
+//        auto cur = q.front(); q.pop();
+//        for (int dir = 0; dir < 4; dir++) {
+//            int en = 0; // dir 방향으로 진행할 때 카드 혹은 마지막 까지의 거리
+//            while (true) {
+//                int nx = cur.X + dx[dir] * en;
+//                int ny = cur.Y + dy[dir] * en;
+//                if (OOB(nx + dx[dir], ny + dy[dir]) || (en != 0 && board[nx][ny] != 0)) break;
+//                en++;
+//            }
+//            for (int z : {1, en}) {
+//                int nx = cur.X + dx[dir] * z;
+//                int ny = cur.Y + dy[dir] * z;
+//                if (OOB(nx, ny)) continue;
+//                if (d[nx][ny] == -1)
+//                {
+//                    d[nx][ny] = d[cur.X][cur.Y] + 1;
+//                    q.push({ nx,ny });
+//                }
+//            }
+//        }
+//    }
+//    return d[dst.X][dst.Y];
+//}
+//int solution(vector<vector<int>> board, int r, int c) {
+//    vector<pii> occur[7];
+//
+//    for (int i = 0; i < 4; i++) for (int j = 0; j < 4; j++) {
+//        if (board[i][j] == 0) continue;
+//        occur[board[i][j]].push_back({ i,j });
+//    }
+//
+//    vector<int> p;
+//    for (int i = 1; i <= 6; i++) {
+//        if (!occur[i].empty()) p.push_back(i);
+//    }
+//    int n = p.size(); // 카드 종류의 개수
+//    int ans = 987654321;
+//    do { // 제거할 종류의 순서에 대한 permutation
+//        vector<vector<int>> myboard = board;
+//        int d[6][2];
+//        d[0][0] = dist(myboard, { r, c }, occur[p[0]][0]) + dist(myboard, occur[p[0]][0], occur[p[0]][1]);
+//        d[0][1] = dist(myboard, { r, c }, occur[p[0]][1]) + dist(myboard, occur[p[0]][1], occur[p[0]][0]);
+//        myboard[occur[p[0]][0].X][occur[p[0]][0].Y] = 0;
+//        myboard[occur[p[0]][1].X][occur[p[0]][1].Y] = 0;
+//        for (int i = 1; i < n; i++) {
+//            d[i][0] = min(d[i - 1][0] + dist(myboard, occur[p[i - 1]][1], occur[p[i]][0]), d[i - 1][1] + dist(myboard, occur[p[i - 1]][0], occur[p[i]][0])) + dist(myboard, occur[p[i]][0], occur[p[i]][1]);
+//            d[i][1] = min(d[i - 1][0] + dist(myboard, occur[p[i - 1]][1], occur[p[i]][1]), d[i - 1][1] + dist(myboard, occur[p[i - 1]][0], occur[p[i]][1])) + dist(myboard, occur[p[i]][1], occur[p[i]][0]);
+//            myboard[occur[p[i]][0].X][occur[p[i]][0].Y] = 0;
+//            myboard[occur[p[i]][1].X][occur[p[i]][1].Y] = 0;
+//        }
+//        ans = min({ ans, d[n - 1][0], d[n - 1][1] });
+//    } while (next_permutation(p.begin(), p.end()));
+//    return ans + 2 * n;
+//}
+
+//// https://www.youtube.com/watch?v=4bwz9yOUGWM
+//// 최대한 객체를 풀어서 푸는 게 좋은 듯
+//#include <string>
+//#include <vector>
+//#include <queue>
+//
+//using namespace std;
+//#define INF 987654321
+//
+//struct Point {
+//    int row, col, cnt;
+//};
+//
+//vector<vector<int>> Board;
+//int D[4][2] = { {-1,0},{1,0},{0,-1},{0,1} };
+//
+//int bfs(Point src, Point dst) {
+//    bool visited[4][4] = { false };
+//    queue<Point> q;
+//    q.push(src);
+//    while (!q.empty()) {
+//        Point curr = q.front();
+//        q.pop();
+//        if (curr.row == dst.row && curr.col == dst.col)
+//            return curr.cnt;
+//
+//        for (int i = 0; i < 4; i++) {
+//            int nr = curr.row + D[i][0], nc = curr.col + D[i][1];
+//            if (nr < 0 || nr>3 || nc < 0 || nc>3) continue;
+//
+//            if (!visited[nr][nc]) {
+//                visited[nr][nc] = true;
+//                q.push({ nr,nc,curr.cnt + 1 });
+//            }
+//
+//            for (int j = 0; j < 2; j++) {
+//                if (Board[nr][nc] != 0) break;
+//                if (nr + D[i][0] < 0 || nr + D[i][0]>3 || nc + D[i][1] < 0 || nc + D[i][1]>3)
+//                    break;
+//
+//                nr += D[i][0];
+//                nc += D[i][1];
+//            }
+//
+//            if (!visited[nr][nc]) {
+//                visited[nr][nc] = true;
+//                q.push({ nr,nc,curr.cnt + 1 });
+//            }
+//        }
+//    }
+//    return INF;
+//}
+//
+//int permutate(Point src) {
+//    int ret = INF;
+//    for (int num = 1; num <= 6; num++) {
+//        vector<Point> card;
+//        for (int i = 0; i < 4; i++) {
+//            for (int j = 0; j < 4; j++) {
+//                if (Board[i][j] == num) {
+//                    card.push_back({ i,j,0 });
+//                }
+//            }
+//        }
+//        if (card.empty()) continue;
+//
+//        int one = bfs(src, card[0]) + bfs(card[0], card[1]) + 2;
+//        int two = bfs(src, card[1]) + bfs(card[1], card[0]) + 2;
+//
+//        for (int i = 0; i < 2; i++)
+//            Board[card[i].row][card[i].col] = 0;
+//
+//        ret = min(ret, one + permutate(card[1]));
+//        ret = min(ret, two + permutate(card[0]));
+//
+//        for (int i = 0; i < 2; i++)
+//            Board[card[i].row][card[i].col] = num;
+//    }
+//    if (ret == INF)
+//        return 0;
+//
+//    return ret;
+//}
+//
+//int solution(vector<vector<int>> board, int r, int c) {
+//    Board = board;
+//
+//    return permutate({ r,c,0 });
+//}
+
 
 //// 2번 문제
 //// 건물 공격과 회복 스킬
