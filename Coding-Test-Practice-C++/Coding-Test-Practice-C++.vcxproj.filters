@@ -249,6 +249,9 @@
     <ClCompile Include="Programmers L1 - Harshad Number.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers L1 - Number of p and y in String.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Programmers L2 - .Life Boat.cpp">
