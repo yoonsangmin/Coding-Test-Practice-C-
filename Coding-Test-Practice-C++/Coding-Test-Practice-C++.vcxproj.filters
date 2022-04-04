@@ -243,13 +243,16 @@
     <ClCompile Include="Programmers Skill up Level 2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Programmers Skill up Level 3.cpp">
+    <ClCompile Include="Programmers Skill up Level 3 - 1.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Programmers L1 - Harshad Number.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Programmers L1 - Number of p and y in String.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers Skill up Level 3 - 2.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
