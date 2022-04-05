@@ -212,6 +212,7 @@
     <ClCompile Include="Programmers L2 - Make a Big Number.cpp" />
     <ClCompile Include="Programmers L2 - phone number list.cpp" />
     <ClCompile Include="Programmers L2 - Printer.cpp" />
+    <ClCompile Include="Programmers L2 - Split the Power Grid in Two.cpp" />
     <ClCompile Include="Programmers L2 - The Biggest Number.cpp" />
     <ClCompile Include="Programmers L2 - truck crossing the bridge.cpp" />
     <ClCompile Include="Programmers L3 - best album.cpp" />
