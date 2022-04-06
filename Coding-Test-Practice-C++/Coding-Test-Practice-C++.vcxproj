@@ -199,6 +199,7 @@
     <ClCompile Include="Programmers L1 - Number of p and y in String.cpp" />
     <ClCompile Include="Programmers L1 - Number String and English Word.cpp" />
     <ClCompile Include="Programmers L1 - Pick Two Numbers and Sum.cpp" />
+    <ClCompile Include="Programmers L1 - Pokemon.cpp" />
     <ClCompile Include="Programmers L1 - Press the Keypad.cpp" />
     <ClCompile Include="Programmers L1 - The Highest and Lowest Rank of Lottos.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
