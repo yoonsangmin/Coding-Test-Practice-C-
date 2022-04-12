@@ -92,21 +92,79 @@
 //    return answer;
 //}
 
-// 2번 문제
-// 아이템 줍기
-#include <string>
-#include <vector>
-
-using namespace std;
-
-int solution(vector<vector<int>> rectangle, int characterX, int characterY, int itemX, int itemY) {
-    int answer = 0;
-    vector<vector<int>> mix;
-
-    for (vector<int> elem : rectangle)
-    {
-
-    }
-
-    return answer;
-}
+//// 2번 문제
+//// 아이템 줍기
+//// 맵 만드는 법 아이디어를 찾은 후 품 - 맵을 배열로 만드는 것, 두 배하는 것
+//#include <string>
+//#include <vector>
+//#include <algorithm>
+//
+//using namespace std;
+//
+//int dir[4][2] = { {0 , 1}, {1, 0}, {-1, 0}, {0, -1} };
+//
+//void count_dist(vector<vector<bool>>& coor, int x, int y, int& iX, int& iY, int prevX, int prevY, int& cnt)
+//{
+//    if (x == iX && y == iY)
+//        return;
+//
+//    for (int* select : dir)
+//    {
+//        if (prevX == x + select[0] && prevY == y + select[1])
+//            continue;
+//        if (coor[x + select[0]][y + select[1]])
+//        {
+//            count_dist(coor, x + select[0], y + select[1], iX, iY, x, y, ++cnt);
+//            break;
+//        }
+//    }
+//}
+//
+//int solution(vector<vector<int>> rectangle, int characterX, int characterY, int itemX, int itemY) {
+//    vector<int> answers;
+//    // 좌표를 두 배로 넓혀서 계산
+//    vector<vector<bool>> coor(102, vector<bool>(102, false));
+//
+//    for (vector<int> elem : rectangle)
+//    {
+//        int l = elem[0] * 2, r = elem[2] * 2, b = elem[1] * 2, t = elem[3] * 2;
+//
+//        for (int x = l; x <= r; x++)
+//        {
+//            coor[x][b] = true;
+//            coor[x][t] = true;
+//        }
+//
+//        for (int y = b + 1; y < t; y++)
+//        {
+//            coor[l][y] = true;
+//            coor[r][y] = true;
+//        }
+//    }
+//
+//    for (vector<int> elem : rectangle)
+//    {
+//        int l = elem[0] * 2, r = elem[2] * 2, b = elem[1] * 2, t = elem[3] * 2;
+//
+//        for (int x = l + 1; x < r; x++)
+//            for (int y = b + 1; y < t; y++)
+//                coor[x][y] = false;
+//    }
+//
+//    characterX *= 2;
+//    characterY *= 2;
+//    itemX *= 2;
+//    itemY *= 2;
+//
+//    for (int* select : dir)
+//    {
+//        if (coor[characterX + select[0]][characterY + select[1]])
+//        {
+//            int answer = 1;
+//            count_dist(coor, characterX + select[0], characterY + select[1], itemX, itemY, characterX, characterY, answer);
+//            answers.push_back(answer);
+//        }
+//    }
+//
+//    return *min_element(answers.begin(), answers.end()) / 2;
+//}
