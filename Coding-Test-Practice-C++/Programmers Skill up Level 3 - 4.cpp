@@ -168,3 +168,30 @@
 //
 //    return *min_element(answers.begin(), answers.end()) / 2;
 //}
+
+//#include<iostream>
+//using namespace std;
+//
+//int strcmp(const char* a, const char* b)
+//{
+//	for (int i = 0;;i++)
+//	{
+//		if (a[i] == '\0' && b[i] == '\0') return 0;
+//		if (a[i] == '\0')	return 1;
+//		if (b[i] == '\0')	return -1;
+//
+//		if (a[i] == b[i])
+//		{
+//			continue;
+//		}
+//
+//		return a[i] > b[i] ? 1 : -1;
+//	}
+//
+//}
+//
+//int main()
+//{
+//	cout << strcmp("abcd", "acb");
+//	//strcmp(abc, abcd);
+//}
