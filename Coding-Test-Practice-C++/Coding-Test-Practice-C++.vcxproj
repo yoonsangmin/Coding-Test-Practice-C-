@@ -186,9 +186,11 @@
     <ClCompile Include="Programmers L1 - Add Yin and Yang.cpp" />
     <ClCompile Include="Programmers L1 - Budget.cpp" />
     <ClCompile Include="Programmers L1 - Caeser Cipher.cpp" />
+    <ClCompile Include="Programmers L1 - Collatz conjecture.cpp" />
     <ClCompile Include="Programmers L1 - Divisible Array of Numbers.cpp" />
     <ClCompile Include="Programmers L1 - Dot Product.cpp" />
     <ClCompile Include="Programmers L1 - Find a number whose remainder is 1.cpp" />
+    <ClCompile Include="Programmers L1 - Finding Kim.cpp" />
     <ClCompile Include="Programmers L1 - Finding Prime Number.cpp" />
     <ClCompile Include="Programmers L1 - Generate a New ID.cpp" />
     <ClCompile Include="Programmers L1 - Get Middle Letter.cpp" />
@@ -206,6 +208,7 @@
     <ClCompile Include="Programmers L1 - Placing Strings in Descending Order.cpp" />
     <ClCompile Include="Programmers L1 - Pokemon.cpp" />
     <ClCompile Include="Programmers L1 - Press the Keypad.cpp" />
+    <ClCompile Include="Programmers L1 - Su Bak.cpp" />
     <ClCompile Include="Programmers L1 - The Highest and Lowest Rank of Lottos.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
     <ClCompile Include="Programmers L2 - camouflage.cpp" />

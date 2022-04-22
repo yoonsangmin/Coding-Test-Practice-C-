@@ -285,6 +285,15 @@
     <ClCompile Include="Programmers L1 - Placing Strings in Descending Order.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers L1 - Finding Kim.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers L1 - Su Bak.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers L1 - Collatz conjecture.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Programmers L2 - .Life Boat.cpp">
