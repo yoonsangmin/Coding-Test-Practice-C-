@@ -303,6 +303,12 @@
     <ClCompile Include="Programmers L1 - Sum between Two integers.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers L1 - Sorting String My Own Way.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers L1 - Sum of divisors.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Programmers L2 - .Life Boat.cpp">

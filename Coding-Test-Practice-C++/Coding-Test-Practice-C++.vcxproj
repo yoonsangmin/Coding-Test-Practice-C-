@@ -209,8 +209,10 @@
     <ClCompile Include="Programmers L1 - Placing Strings in Descending Order.cpp" />
     <ClCompile Include="Programmers L1 - Pokemon.cpp" />
     <ClCompile Include="Programmers L1 - Press the Keypad.cpp" />
+    <ClCompile Include="Programmers L1 - Sorting String My Own Way.cpp" />
     <ClCompile Include="Programmers L1 - Su Bak.cpp" />
     <ClCompile Include="Programmers L1 - Sum between Two integers.cpp" />
+    <ClCompile Include="Programmers L1 - Sum of divisors.cpp" />
     <ClCompile Include="Programmers L1 - Ternary Flip.cpp" />
     <ClCompile Include="Programmers L1 - The Highest and Lowest Rank of Lottos.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
