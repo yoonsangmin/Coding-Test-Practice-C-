@@ -187,6 +187,7 @@
     <ClCompile Include="Programmers L1 - Budget.cpp" />
     <ClCompile Include="Programmers L1 - Caeser Cipher.cpp" />
     <ClCompile Include="Programmers L1 - Collatz conjecture.cpp" />
+    <ClCompile Include="Programmers L1 - Determin the Square Root of an Integer.cpp" />
     <ClCompile Include="Programmers L1 - Divisible Array of Numbers.cpp" />
     <ClCompile Include="Programmers L1 - Dot Product.cpp" />
     <ClCompile Include="Programmers L1 - Even and Odd.cpp" />
@@ -202,6 +203,7 @@
     <ClCompile Include="Programmers L1 - Harshad Number.cpp" />
     <ClCompile Include="Programmers L1 - I hate the same number.cpp" />
     <ClCompile Include="Programmers L1 - Make a Prime Number.cpp" />
+    <ClCompile Include="Programmers L1 - Make an Array by Flip a Natural Number.cpp" />
     <ClCompile Include="Programmers L1 - Minimum Rectangle.cpp" />
     <ClCompile Include="Programmers L1 - Mock Exam.cpp" />
     <ClCompile Include="Programmers L1 - Number of factors and Addition.cpp" />
@@ -218,6 +220,7 @@
     <ClCompile Include="Programmers L1 - Sum of divisors.cpp" />
     <ClCompile Include="Programmers L1 - Ternary Flip.cpp" />
     <ClCompile Include="Programmers L1 - The Highest and Lowest Rank of Lottos.cpp" />
+    <ClCompile Include="Programmers L1 - The secret map.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
     <ClCompile Include="Programmers L2 - camouflage.cpp" />
     <ClCompile Include="Programmers L2 - Carpet.cpp" />
