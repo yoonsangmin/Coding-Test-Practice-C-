@@ -201,9 +201,11 @@
     <ClCompile Include="Programmers L1 - Getting Report Results.cpp" />
     <ClCompile Include="Programmers L1 - Gym Suit.cpp" />
     <ClCompile Include="Programmers L1 - Harshad Number.cpp" />
+    <ClCompile Include="Programmers L1 - Hide Cell Phone Number.cpp" />
     <ClCompile Include="Programmers L1 - I hate the same number.cpp" />
     <ClCompile Include="Programmers L1 - Make a Prime Number.cpp" />
     <ClCompile Include="Programmers L1 - Make an Array by Flip a Natural Number.cpp" />
+    <ClCompile Include="Programmers L1 - Make Strange String.cpp" />
     <ClCompile Include="Programmers L1 - Minimum Rectangle.cpp" />
     <ClCompile Include="Programmers L1 - Mock Exam.cpp" />
     <ClCompile Include="Programmers L1 - Number of factors and Addition.cpp" />
@@ -221,6 +223,7 @@
     <ClCompile Include="Programmers L1 - Ternary Flip.cpp" />
     <ClCompile Include="Programmers L1 - The Highest and Lowest Rank of Lottos.cpp" />
     <ClCompile Include="Programmers L1 - The secret map.cpp" />
+    <ClCompile Include="Programmers L1 - Turn String into Integer.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
     <ClCompile Include="Programmers L2 - camouflage.cpp" />
     <ClCompile Include="Programmers L2 - Carpet.cpp" />
