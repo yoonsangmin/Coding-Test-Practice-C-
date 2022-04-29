@@ -184,6 +184,7 @@
     <ClCompile Include="Programmers L1 - 2016.cpp" />
     <ClCompile Include="Programmers L1 - Add Missing Numbers.cpp" />
     <ClCompile Include="Programmers L1 - Add Yin and Yang.cpp" />
+    <ClCompile Include="Programmers L1 - Addition of Matrices.cpp" />
     <ClCompile Include="Programmers L1 - Budget.cpp" />
     <ClCompile Include="Programmers L1 - Caeser Cipher.cpp" />
     <ClCompile Include="Programmers L1 - Collatz conjecture.cpp" />
@@ -204,10 +205,12 @@
     <ClCompile Include="Programmers L1 - Hide Cell Phone Number.cpp" />
     <ClCompile Include="Programmers L1 - I hate the same number.cpp" />
     <ClCompile Include="Programmers L1 - Make a Prime Number.cpp" />
+    <ClCompile Include="Programmers L1 - Make a Rectangle of Star.cpp" />
     <ClCompile Include="Programmers L1 - Make an Array by Flip a Natural Number.cpp" />
     <ClCompile Include="Programmers L1 - Make Strange String.cpp" />
     <ClCompile Include="Programmers L1 - Minimum Rectangle.cpp" />
     <ClCompile Include="Programmers L1 - Mock Exam.cpp" />
+    <ClCompile Include="Programmers L1 - N Numbers Spaced by X.cpp" />
     <ClCompile Include="Programmers L1 - Number of factors and Addition.cpp" />
     <ClCompile Include="Programmers L1 - Number of p and y in String.cpp" />
     <ClCompile Include="Programmers L1 - Number String and English Word.cpp" />
