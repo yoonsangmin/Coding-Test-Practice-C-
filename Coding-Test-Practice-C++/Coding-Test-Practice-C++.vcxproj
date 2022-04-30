@@ -182,6 +182,7 @@
     <ClCompile Include="LeetCode - Top K Frequent Elements.cpp" />
     <ClCompile Include="LeetCode - Valid Parentheses.cpp" />
     <ClCompile Include="Programmers L1 - 2016.cpp" />
+    <ClCompile Include="Programmers L1 - Add Digit.cpp" />
     <ClCompile Include="Programmers L1 - Add Missing Numbers.cpp" />
     <ClCompile Include="Programmers L1 - Add Yin and Yang.cpp" />
     <ClCompile Include="Programmers L1 - Addition of Matrices.cpp" />
@@ -215,12 +216,14 @@
     <ClCompile Include="Programmers L1 - Number of p and y in String.cpp" />
     <ClCompile Include="Programmers L1 - Number String and English Word.cpp" />
     <ClCompile Include="Programmers L1 - Pick Two Numbers and Sum.cpp" />
+    <ClCompile Include="Programmers L1 - Picking Crane Dolls.cpp" />
     <ClCompile Include="Programmers L1 - Placing Integers in Descending Order.cpp" />
     <ClCompile Include="Programmers L1 - Placing Strings in Descending Order.cpp" />
     <ClCompile Include="Programmers L1 - Pokemon.cpp" />
     <ClCompile Include="Programmers L1 - Press the Keypad.cpp" />
     <ClCompile Include="Programmers L1 - Sorting String My Own Way.cpp" />
-    <ClCompile Include="Programmers L1 - Su Bak.cpp" />
+    <ClCompile Include="Programmers L1 - String Handling Basic.cpp" />
+    <ClCompile Include="Programmers L1 - Su Bak%28Watermelon%29.cpp" />
     <ClCompile Include="Programmers L1 - Sum between Two integers.cpp" />
     <ClCompile Include="Programmers L1 - Sum of divisors.cpp" />
     <ClCompile Include="Programmers L1 - Ternary Flip.cpp" />

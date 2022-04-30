@@ -288,7 +288,7 @@
     <ClCompile Include="Programmers L1 - Finding Kim.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="Programmers L1 - Su Bak.cpp">
+    <ClCompile Include="Programmers L1 - Su Bak%28Watermelon%29.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Programmers L1 - Collatz conjecture.cpp">
@@ -343,6 +343,15 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Programmers L1 - N Numbers Spaced by X.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers L1 - Picking Crane Dolls.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers L1 - String Handling Basic.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers L1 - Add Digit.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
