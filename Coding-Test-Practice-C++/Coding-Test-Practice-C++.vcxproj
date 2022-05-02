@@ -29,26 +29,26 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v142</PlatformToolset>
+    <PlatformToolset>v143</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -189,9 +189,11 @@
     <ClCompile Include="Programmers L1 - Budget.cpp" />
     <ClCompile Include="Programmers L1 - Caeser Cipher.cpp" />
     <ClCompile Include="Programmers L1 - Collatz conjecture.cpp" />
+    <ClCompile Include="Programmers L1 - Darts Game.cpp" />
     <ClCompile Include="Programmers L1 - Determin the Square Root of an Integer.cpp" />
     <ClCompile Include="Programmers L1 - Divisible Array of Numbers.cpp" />
     <ClCompile Include="Programmers L1 - Dot Product.cpp" />
+    <ClCompile Include="Programmers L1 - Eliminate The Smallest Number.cpp" />
     <ClCompile Include="Programmers L1 - Even and Odd.cpp" />
     <ClCompile Include="Programmers L1 - Failure Rate.cpp" />
     <ClCompile Include="Programmers L1 - Find a number whose remainder is 1.cpp" />
@@ -227,6 +229,7 @@
     <ClCompile Include="Programmers L1 - Sum between Two integers.cpp" />
     <ClCompile Include="Programmers L1 - Sum of divisors.cpp" />
     <ClCompile Include="Programmers L1 - Ternary Flip.cpp" />
+    <ClCompile Include="Programmers L1 - The Greatest Common Denominator and The Least Common Multiple.cpp" />
     <ClCompile Include="Programmers L1 - The Highest and Lowest Rank of Lottos.cpp" />
     <ClCompile Include="Programmers L1 - The secret map.cpp" />
     <ClCompile Include="Programmers L1 - Turn String into Integer.cpp" />
