@@ -234,8 +234,10 @@
     <ClCompile Include="Programmers L1 - The secret map.cpp" />
     <ClCompile Include="Programmers L1 - Turn String into Integer.cpp" />
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
+    <ClCompile Include="Programmers L2 - Archery Competition.cpp" />
     <ClCompile Include="Programmers L2 - camouflage.cpp" />
     <ClCompile Include="Programmers L2 - Carpet.cpp" />
+    <ClCompile Include="Programmers L2 - Fatigue.cpp" />
     <ClCompile Include="Programmers L2 - Finding Prime Number.cpp" />
     <ClCompile Include="Programmers L2 - Function Development.cpp" />
     <ClCompile Include="Programmers L1 - Kth Number.cpp" />
