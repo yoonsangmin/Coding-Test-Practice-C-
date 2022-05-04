@@ -369,6 +369,12 @@
     <ClCompile Include="Programmers L2 - Archery Competition.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers L2 - 2 or Less Different Bits.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="Programmers L2 - Make Stars at Cross Points.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Programmers L2 - .Life Boat.cpp">
