@@ -9,9 +9,10 @@ vector<string> solution(vector<vector<int>> line) {
     vector<string> answer;
     vector<vector<long long>> points;
 
-    double a1, b1, c1;
-    double a2, b2, c2;
-    double x, y;
+    long long a1, b1, c1;
+    long long a2, b2, c2;
+    long long d1, d2;
+    long long x, y;
 
     long long left = LLONG_MAX, right = LLONG_MIN, bottom = LLONG_MAX, top = LLONG_MIN;
 
@@ -27,18 +28,41 @@ vector<string> solution(vector<vector<int>> line) {
             c2 = line[j][2];
 
             // 평행인 경우
-            double d = a1 * b2 - a2 * b1;
-            if (d == 0)
+            d2 = a1 * b2 - a2 * b1;
+            if (d2 == 0)
                 continue;
 
-            x = c2 * b1 - c1 * b2;
-            x /= d;
-            if (x != (long long)x)
+            d1 = c2 * b1 - c1 * b2;
+
+            if (d1 % d2 != 0)
                 continue;
+
+            x = d1 / d2;
+            
             // y = (c2 * a1 - c1 * a2) / (b1 * a2 - b2 * a1);
-            y = -(a1 * x + c1) / b1;
-            if (y != (long long)y)
-                continue;
+
+            
+            if (b1 == 0)
+            {
+                d1 = -a2 * x - c2;
+                d2 = b2;
+
+                if (d1 % d2 != 0)
+                    continue;
+
+                y = d1 / d2;
+            }
+
+            if (b1 != 0)
+            {
+                d1 = -a1 * x - c1;
+                d2 = b1;
+
+                if (d1 % d2 != 0)
+                    continue;
+
+                y = d1 / d2;
+            }
 
             points.push_back({ (long long)x, (long long)y });
             left = min(left, (long long)x);
