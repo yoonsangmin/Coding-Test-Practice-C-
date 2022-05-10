@@ -375,6 +375,9 @@
     <ClCompile Include="Programmers L2 - Make Stars at Cross Points.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers L2 - Find The Number of Prime Numbers in K Numer.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Programmers L2 - .Life Boat.cpp">

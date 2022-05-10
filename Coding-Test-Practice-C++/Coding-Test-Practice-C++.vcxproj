@@ -239,6 +239,7 @@
     <ClCompile Include="Programmers L2 - camouflage.cpp" />
     <ClCompile Include="Programmers L2 - Carpet.cpp" />
     <ClCompile Include="Programmers L2 - Fatigue.cpp" />
+    <ClCompile Include="Programmers L2 - Find The Number of Prime Numbers in K Numer.cpp" />
     <ClCompile Include="Programmers L2 - Finding Prime Number.cpp" />
     <ClCompile Include="Programmers L2 - Function Development.cpp" />
     <ClCompile Include="Programmers L1 - Kth Number.cpp" />
