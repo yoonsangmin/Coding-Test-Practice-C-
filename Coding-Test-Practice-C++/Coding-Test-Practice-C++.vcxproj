@@ -236,6 +236,7 @@
     <ClCompile Include="Programmers L1 - uncompleted participant.cpp" />
     <ClCompile Include="Programmers L2 - 2 or Less Different Bits.cpp" />
     <ClCompile Include="Programmers L2 - Archery Competition.cpp" />
+    <ClCompile Include="Programmers L2 - Calculate Parking Fee.cpp" />
     <ClCompile Include="Programmers L2 - camouflage.cpp" />
     <ClCompile Include="Programmers L2 - Carpet.cpp" />
     <ClCompile Include="Programmers L2 - Fatigue.cpp" />
