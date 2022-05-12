@@ -239,6 +239,7 @@
     <ClCompile Include="Programmers L2 - Calculate Parking Fee.cpp" />
     <ClCompile Include="Programmers L2 - camouflage.cpp" />
     <ClCompile Include="Programmers L2 - Carpet.cpp" />
+    <ClCompile Include="Programmers L2 - Cut n^2 Array.cpp" />
     <ClCompile Include="Programmers L2 - Fatigue.cpp" />
     <ClCompile Include="Programmers L2 - Find The Number of Prime Numbers in K Numer.cpp" />
     <ClCompile Include="Programmers L2 - Finding Prime Number.cpp" />

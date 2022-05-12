@@ -381,6 +381,9 @@
     <ClCompile Include="Programmers L2 - Calculate Parking Fee.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Programmers L2 - Cut n^2 Array.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <None Include="Programmers L2 - .Life Boat.cpp">
