@@ -247,6 +247,7 @@
     <ClCompile Include="Programmers L1 - Kth Number.cpp" />
     <ClCompile Include="Programmers L2 - H-Index.cpp" />
     <ClCompile Include="Programmers L2 - Joystick.cpp" />
+    <ClCompile Include="Programmers L2 - Light Path Cycle.cpp" />
     <ClCompile Include="Programmers L2 - Make a Big Number.cpp" />
     <ClCompile Include="Programmers L2 - Make Stars at Cross Points.cpp" />
     <ClCompile Include="Programmers L2 - phone number list.cpp" />
