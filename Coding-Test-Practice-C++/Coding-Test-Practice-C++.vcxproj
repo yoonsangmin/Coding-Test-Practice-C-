@@ -258,6 +258,7 @@
     <ClCompile Include="Programmers L3 - best album.cpp" />
     <ClCompile Include="Programmers L3 - Connecting islands.cpp" />
     <ClCompile Include="Programmers L3 - Move 110.cpp" />
+    <ClCompile Include="Programmers L3 - Move Blocks.cpp" />
     <ClCompile Include="Programmers L3 - Sheep and Wolves.cpp" />
     <ClCompile Include="Programmers L3 - Speed Trap Camera.cpp" />
     <ClCompile Include="Programmers Skill up Level 2.cpp" />
