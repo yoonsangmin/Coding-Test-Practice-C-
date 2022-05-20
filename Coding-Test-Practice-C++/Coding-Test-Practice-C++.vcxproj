@@ -255,6 +255,7 @@
     <ClCompile Include="Programmers L2 - Split the Power Grid in Two.cpp" />
     <ClCompile Include="Programmers L2 - The Biggest Number.cpp" />
     <ClCompile Include="Programmers L2 - truck crossing the bridge.cpp" />
+    <ClCompile Include="Programmers L3 - Ball Movement Simulation.cpp" />
     <ClCompile Include="Programmers L3 - best album.cpp" />
     <ClCompile Include="Programmers L3 - Carrying Gold and Silver.cpp" />
     <ClCompile Include="Programmers L3 - Connecting islands.cpp" />
