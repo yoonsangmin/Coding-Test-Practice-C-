@@ -1,25 +1,30 @@
-#include <string>
+#include <iostream>
+#include <algorithm>
 #include <vector>
 
 using namespace std;
+bool amove(vector<vector<int>>& board, vector<int> aloc, vector<int> bloc, int cnt, int& depth);
+bool bmove(vector<vector<int>>& board, vector<int> aloc, vector<int> bloc, int cnt, int& depth);
 
 int dx[] = { 1, 0, -1, 0 };
 int dy[] = { 0, 1, 0, -1 };
 
-bool amove(vector<vector<int>>& board, vector<int> aloc, vector<int> bloc, int acnt, int bcnt, int& answer)
+bool amove(vector<vector<int>>& board, vector<int> aloc, vector<int> bloc, int cnt, int& depth)
 {
-    // 모두 다 질 수도 이길 수도 있는 상태 - 졌을 경우 가장 긴 것을 선택
-    // 모두 다 이길 수 있는 선택지가 있으면 무조건 골라야 함
-
-    // 리프 노드에서 다시 생각하자 - 리프 노드는 지는 경우 밖에 모름 - 상대가 다 진 경우 - 내가 이김
-    // 현재 발판이 없거나 갈 곳이 없으면 내가 짐    
-    // 상대가 이길 수 있는 경우가 있다면 짐
-    // 모든 경우 상대가 졌을 경우 이김
-
-
     // 발판 체크 - 현재 서있던 곳의 발판이 없어졌으면 졌다고 알려줌
     if (board[aloc[0]][aloc[1]] == 0)
+    {
+        depth = cnt;
+        cout << cnt << " a 발판 없어 " << depth << endl << endl;
         return false;
+    }
+    // 발판을 없앰
+    else
+        board[aloc[0]][aloc[1]] = 0;
+
+    bool result = true;
+    bool canmove = false;
+    vector<int> childs;
 
     for (int i = 0; i < 4; i++)
     {
@@ -30,24 +35,68 @@ bool amove(vector<vector<int>>& board, vector<int> aloc, vector<int> bloc, int a
             continue;
         else if (board[nextloc[0]][nextloc[1]] == 1)
         {
-            board[nextloc[0]][nextloc[1]] = 0;
-            // bmove 호출
-            bmove(board, nextloc, bloc, acnt + 1, bcnt, answer);
+            canmove = true;
+            int child;
 
-            board[nextloc[0]][nextloc[1]] = 1;
+            // bmove 호출, 상대방이 모두 졌으면 result = true, 한 번이라도 이겼으면 result = false;
+            result &= !bmove(board, nextloc, bloc, cnt + 1, child);
+
+            childs.push_back(child);
         }
     }
 
-    // 내가 어느 곳으로 이동하든 지는 경우 상대가 승리
-    return true;
+    // 발판 다시 만듦
+    board[aloc[0]][aloc[1]] = 1;
+
+    // a가 움직일 수 없는 경우
+    if (!canmove)
+    {
+        depth = cnt;
+        cout << cnt << " a 못 움직여 " << depth << endl << endl;
+        return false;
+    }
+    // a가 이긴 경우
+    else if (result)
+    {
+        depth = *min_element(childs.begin(), childs.end());
+        cout << cnt << " a 이겼어 ";
+        for (int i = 0; i < childs.size(); i++)
+        {
+            cout << childs[i] << ", ";
+        }
+        cout << endl << endl;
+        return true;
+    }
+    // a가 진 경우
+    else
+    {
+        depth = *max_element(childs.begin(), childs.end());
+        cout << cnt << " a 졌어 ";
+        for (int i = 0; i < childs.size(); i++)
+        {
+            cout << childs[i] << ", ";
+        }
+        cout << endl << endl;
+        return false;
+    }
 }
 
-bool bmove(vector<vector<int>>& board, vector<int> aloc, vector<int> bloc, int acnt, int bcnt, int& answer)
+bool bmove(vector<vector<int>>& board, vector<int> aloc, vector<int> bloc, int cnt, int& depth)
 {
-
     // 발판 체크 - 현재 서있던 곳의 발판이 없어졌으면 졌다고 알려줌
     if (board[bloc[0]][bloc[1]] == 0)
+    {
+        depth = cnt;
+        cout << cnt << " b 발판 없어 " << depth << endl << endl;
         return false;
+    }
+    // 발판을 없앰
+    else
+        board[bloc[0]][bloc[1]] = 0;
+
+    bool result = true;
+    bool canmove = false;
+    vector<int> childs;
 
     for (int i = 0; i < 4; i++)
     {
@@ -58,22 +107,65 @@ bool bmove(vector<vector<int>>& board, vector<int> aloc, vector<int> bloc, int a
             continue;
         else if (board[nextloc[0]][nextloc[1]] == 1)
         {
-            board[nextloc[0]][nextloc[1]] = 0;
-            // amove 호출
-            amove(board, aloc, nextloc, acnt, bcnt + 1, answer);
+            canmove = true;
+            int child; 
 
-            board[nextloc[0]][nextloc[1]] = 1;
+            // amove 호출, 상대방이 모두 졌으면 result = true, 한 번이라도 이겼으면 result = false;
+            amove(board, aloc, nextloc, cnt + 1, child);
+
+            childs.push_back(child);
         }
     }
 
-    // 움직일 수 있는 곳이 없을 때 - 패배(리턴 수정 필요)
-    return true;
+    // 발판 다시 만듦
+    board[bloc[0]][bloc[1]] = 1;
+
+    // b가 움직일 수 없는 경우
+    if (!canmove)
+    {
+        depth = cnt;
+        cout << cnt << " b 못 움직여 " << depth << endl << endl;
+        return false;
+    }
+    // b가 이긴 경우
+    else if (result)
+    {
+        depth = *min_element(childs.begin(), childs.end());
+        cout << cnt << " b 이겼어 ";
+        for (int i = 0; i < childs.size(); i++)
+        {
+            cout << childs[i] << ", ";
+        }
+        cout << endl << endl;
+        return true;
+    }
+    // b가 진 경우
+    else
+    {
+        depth = *max_element(childs.begin(), childs.end());
+        cout << cnt << " b 졌어 ";
+        for (int i = 0; i < childs.size(); i++)
+        {
+            cout << childs[i] << ", ";
+        }
+        cout << endl << endl;
+        return false;
+    }
 }
 
 int solution(vector<vector<int>> board, vector<int> aloc, vector<int> bloc) {
-    int answer = -1;
+    int answer = 0;
 
-    amove(board, aloc, bloc, 0, 0, answer);
+    amove(board, aloc, bloc, 0, answer);
 
     return answer;
+}
+
+int main()
+{
+    cout << solution({ {1, 1, 1, 0},{1, 1, 0, 1},{1, 0, 1, 1},{0, 1, 1, 1} }, { 0, 0 }, { 3, 3 });
+
+    // 8
+
+    return 0;
 }
