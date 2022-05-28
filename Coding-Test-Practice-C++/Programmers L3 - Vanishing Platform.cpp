@@ -158,52 +158,52 @@
 //    return 0;
 //}
 
-// 다른 사람 풀이
-#include <vector>
-#define fastio cin.tie(0)->sync_with_stdio(0)
-using namespace std;
-
-using vi = vector<int>;
-using vvi = vector<vi>;
-using pii = pair<int, int>;
-
-enum Player { A, B };
-
-// 함수를 하나로 만들어서 현재 플레이어를 표시해 줌
-pii DFS(vvi& board, Player p1, int x1, int y1, int x2, int y2) { // { winner, cnt } in current state
-    Player p2 = p1 == A ? B : A;
-    pii ret{ p2, 0 };
-    // 현재 서있는 곳에 발판이 있는지 체크
-    if (board[x1][y1]) for (int d = 0; d < 4; d++) {
-        // 1012에 나온 char에 '1'을 빼줌 - int로는 0 -1 0 1 이 됨
-        // 이동
-        const int nx = x1 + "1012"[d] - '1';
-        const int ny = y1 + "2101"[d] - '1';
-        // 범위 벗어났는지, 갈 곳에 발판이 없는지 체크
-        if (nx < 0 || nx >= board.size() || ny < 0 || ny >= board[0].size() || !board[nx][ny]) continue;
-        // 현재 서 있는 곳의 발판을 없앰
-        board[x1][y1] = 0;
-        // 위치를 서로 바꿔서 보냄
-        auto [win, cnt] = DFS(board, p2, x2, y2, nx, ny);
-        // 발판 다시 만듦
-        board[x1][y1] = 1;
-        
-        // 내가 이긴 경우
-        if (win == p1) {
-            // ret.first는 처음엔 상대, ret.first == p1 - 내가 이길 경우가 하나보다 많을 때 - 이기는 노드들 중 최솟값을 고름
-            if (ret.first == p1) ret.second = min(ret.second, cnt + 1);
-            // (상대가 진 적) 내가 이길 경우가 하나라도 있으면 ret.firs가 내가 됨 - 이긴 경우의 노드를 바로 골라서 cnt를 사용
-            else ret = { win, cnt + 1 };
-        }
-        // 상대가 이긴 경우, ret.first가 상대인 경우 - 내가 이길 경우가 아직 없을 때만 - 다음 노드들 중 최댓값
-        else if (ret.first == p2) ret.second = max(ret.second, cnt + 1);
-    }
-    // pair를 써서 이긴 플레이어, cnt를 한 번에 반환함
-    return ret;
-}
-
-int solution(vvi board, vi aloc, vi bloc) {
-    const int ax = aloc[0], ay = aloc[1];
-    const int bx = bloc[0], by = bloc[1];
-    return DFS(board, A, ax, ay, bx, by).second;
-}
+//// 다른 사람 풀이
+//#include <vector>
+//#define fastio cin.tie(0)->sync_with_stdio(0)
+//using namespace std;
+//
+//using vi = vector<int>;
+//using vvi = vector<vi>;
+//using pii = pair<int, int>;
+//
+//enum Player { A, B };
+//
+//// 함수를 하나로 만들어서 현재 플레이어를 표시해 줌
+//pii DFS(vvi& board, Player p1, int x1, int y1, int x2, int y2) { // { winner, cnt } in current state
+//    Player p2 = p1 == A ? B : A;
+//    pii ret{ p2, 0 };
+//    // 현재 서있는 곳에 발판이 있는지 체크
+//    if (board[x1][y1]) for (int d = 0; d < 4; d++) {
+//        // 1012에 나온 char에 '1'을 빼줌 - int로는 0 -1 0 1 이 됨
+//        // 이동
+//        const int nx = x1 + "1012"[d] - '1';
+//        const int ny = y1 + "2101"[d] - '1';
+//        // 범위 벗어났는지, 갈 곳에 발판이 없는지 체크
+//        if (nx < 0 || nx >= board.size() || ny < 0 || ny >= board[0].size() || !board[nx][ny]) continue;
+//        // 현재 서 있는 곳의 발판을 없앰
+//        board[x1][y1] = 0;
+//        // 위치를 서로 바꿔서 보냄
+//        auto [win, cnt] = DFS(board, p2, x2, y2, nx, ny);
+//        // 발판 다시 만듦
+//        board[x1][y1] = 1;
+//        
+//        // 내가 이긴 경우
+//        if (win == p1) {
+//            // ret.first는 처음엔 상대, ret.first == p1 - 내가 이길 경우가 하나보다 많을 때 - 이기는 노드들 중 최솟값을 고름
+//            if (ret.first == p1) ret.second = min(ret.second, cnt + 1);
+//            // (상대가 진 적) 내가 이길 경우가 하나라도 있으면 ret.firs가 내가 됨 - 이긴 경우의 노드를 바로 골라서 cnt를 사용
+//            else ret = { win, cnt + 1 };
+//        }
+//        // 상대가 이긴 경우, ret.first가 상대인 경우 - 내가 이길 경우가 아직 없을 때만 - 다음 노드들 중 최댓값
+//        else if (ret.first == p2) ret.second = max(ret.second, cnt + 1);
+//    }
+//    // pair를 써서 이긴 플레이어, cnt를 한 번에 반환함
+//    return ret;
+//}
+//
+//int solution(vvi board, vi aloc, vi bloc) {
+//    const int ax = aloc[0], ay = aloc[1];
+//    const int bx = bloc[0], by = bloc[1];
+//    return DFS(board, A, ax, ay, bx, by).second;
+//}
